@@ -1,0 +1,22 @@
+{
+  "name": "todolist-frontend",
+  "version": "1.0.0",
+  "description": "For the bootcamp express at Rentcars.com this frontend was made with NuxtJS",
+  "author": "Rentcars.com",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.3.6",
+    "node-sass": "^4.13.0",
+    "nuxt": "^2.0.0",
+    "sass-loader": "^8.0.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/dotenv": "^1.4.1"
+  }
+}

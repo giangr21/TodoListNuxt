@@ -1,0 +1,68 @@
+.title {
+  color: #fff;
+  display: block;
+  font-size: 60px;
+  font-weight: 100;
+  margin: 20px 0 10px;
+  padding: 0 50px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 1;
+  span {
+    display: block;
+    font-weight: inherit;
+  }  
+}
+
+.input-box {
+  box-shadow: 0 2px 8px rgba(black,0.3);
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  width: 90%;
+  z-index: 1;
+
+  input {
+    border-radius: 4px;
+    border: none;
+    color: #222;
+    height: 70px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    font-weight: 100;
+    outline: 0;
+    text-transform: uppercase;
+    padding: 0 60px 0 20px;
+    width: 100%;
+
+    &.alert {
+      background: #FFFF7F;
+      text-align: center;
+    }
+
+    &.has-items { border-radius: 4px 4px 0 0; }
+
+    &::placeholder {  
+      text-align: center; 
+      transition: all 0.3s ease;
+    }
+
+    // Remove o placeholder no evento de focus
+    &:focus::placeholder {
+      color: transparent;
+    }
+  }
+
+  .add-item {
+    position: absolute;
+    right: -40px;
+    transform: translate(0,-50%) rotate(180deg);
+    top: 50%;
+    transition: all 0.4s ease;
+    &.active {
+      opacity: 1;
+      transform: translate(-50px,-50%);
+    }
+  }
+}

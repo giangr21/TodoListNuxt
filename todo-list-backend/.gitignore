@@ -1,0 +1,5 @@
+NODE_MODULES
+yarn-debug.log*
+yarn-error.log*
+.vscode
+.env
